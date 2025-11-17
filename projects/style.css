@@ -217,13 +217,12 @@ header .navbar ul li a:hover{
   object-fit: cover;
 }
 .work .box-container .box .content{
+ top: 0; /* thay vì top: 85% */
   height: 100%;
-  width:100%;
-  position: absolute;
-  top:85%; left:0;
-  background:rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
+  justify-content: flex-end; /* hoặc center, tuỳ ý bạn */
+  background: rgba(255,255,255,0.9);
 }
 .work .box-container .box .content .tag{
   display: flex;
